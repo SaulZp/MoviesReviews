@@ -1,0 +1,39 @@
+:root{
+    --fondo-body: #2E6275;
+    --fondo-footer: black;
+    --texto: white;
+    --fondo-menu: #244A57;
+    --btn-principal: #F17F1A;
+    --btn-secundario: #00FF90;
+    --btn-cancelar: #FF0000;
+    --fuente: 'Questrial', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: var(--fuente)!important;
+}
+
+main{
+    background-color: var(--fondo-body);
+}
+
+.banner{
+    height: 450px!important;
+     
+}
+.menu{
+    background-color: var(--fondo-menu);
+    font-family: var(--fuente);
+    
+}
+a.nav-link:hover{
+    color:var(--btn-secundario)!important;
+}
+.user{
+    font-size: 3rem;
+    color: var(--btn-principal);
+}
+.footer{
+    background-color: var(--fondo-footer);
+    height: 50px;
+}
