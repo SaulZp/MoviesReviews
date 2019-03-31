@@ -31,23 +31,24 @@
                 <ul class="navbar-nav ml-auto">
                     
                     <!-- VISITANTE -->
-                    <!-- <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Lo más buscado</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Iniciar Sesión</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Registrate</a></li> -->
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Registrate</a></li>
                     
                     <!-- REGISTRADO -->
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Mis Playlist</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Mis Reseñas</a></li>
-                    <li class="nav-item"><a href="#" class="d-block d-md-none text-white nav-link">Mi Perfil</a></li>
+                    <li class="nav-item"><a href="#" class="d-block d-md-none text-white nav-link">Mi Perfil</a></li> -->
+                    
                     <!-- ADMINISTRADOR -->
                     <!-- <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Película</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Género</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Salir</a></li> -->
                 </ul>
                 <!-- REGISTRADO PERFIL -->
-                <a class="nav-link text-white d-none d-md-inline" href="#"><i class="fas fa-user-circle user"></i></a>
+                <!-- <a class="nav-link text-white d-none d-md-inline" href="#"><i class="fas fa-user-circle user"></i></a> -->
             </div> <!--navbar-collapse-->
         </div> <!--container-->
     </nav> <!--navbar-->
@@ -55,25 +56,30 @@
 
     <!--MAIN-->
     <main >
-       
-        
+        <br><br><br><br>
+        <form action="">
+            <div class="form-group d-flex justify-content-center">
+                <input type="text" class="form-control text-center busqueda w-75 border-0" 
+                id="busqueda" placeholder="Busca tu película" autocomplete="off">
+            </div>
+        </form>   
+        <br><br><br><br>
     </main>
 
 
 
 
-    <br><br><br><br>
-
+    
     <!-- PIE DE PAGINA -->
-    <footer class="footer">
-        <div class="container d-flex justify-content-between align-items-center">
+    <footer class="footer d-flex align-items-center"> 
+        <div class="container d-md-flex d-block justify-content-between align-items-center">
             <div class="text-white">
-                MoviesReviews 2019. Todos los derechos reservados &copy;
+                <p class="m-0">MoviesReviews 2019. Todos los derechos reservados &copy;</p>
             </div>
             <div class="h5">
-              <ul class="nav ">
-                <li class="nav-item"><a href="#" class="nav-link text-white">Nosotros</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white">Contacto</a></li>
+              <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-white pl-0 pl-md-3 pb-1">Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white pl-0 pl-md-3 pb-1">Contacto</a></li>
               </ul>
             </div><!--h5-->
         </div><!--container-->

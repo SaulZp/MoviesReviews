@@ -23,9 +23,30 @@ main{
 }
 .menu{
     background-color: var(--fondo-menu);
-    font-family: var(--fuente);
-    
+    font-family: var(--fuente);   
 }
+
+.busqueda{
+    font-family: var(--fuente)!important;
+    background-color: transparent;
+    border-bottom: 1px solid white!important;
+    padding-bottom: 10px;
+    color: white;
+}
+.busqueda::placeholder{
+    font-family: var(--fuente)!important;
+    color:white!important;
+}
+.busqueda:focus{
+    font-family: var(--fuente)!important;
+    background-color: transparent;
+    color: white!important;
+    border-top: 0 solid transparent!important;
+    border-bottom: 1px solid white!important;
+    padding-bottom: 10;
+    border-color: #eee!important;
+}
+
 a.nav-link:hover{
     color:var(--btn-secundario)!important;
 }
@@ -35,5 +56,5 @@ a.nav-link:hover{
 }
 .footer{
     background-color: var(--fondo-footer);
-    height: 50px;
+    height: 100px;
 }
