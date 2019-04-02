@@ -16,11 +16,16 @@ h1,h2,h3,h4,h5,h6,p{
 main{
     background-color: var(--fondo-body);
 }
-
 .banner{
     height: 450px!important;
      
 }
+body{
+    background-color: var(--fondo-body);
+    margin:0;
+    padding: 0; 
+}
+
 .menu{
     background-color: var(--fondo-menu);
     font-family: var(--fuente);   
@@ -54,6 +59,24 @@ a.nav-link:hover{
     font-size: 3rem;
     color: var(--btn-principal);
 }
+img.poster{
+    position: relative;
+    width: 500px!important;
+    height: 400px!important;
+}
+
+img.poster:hover{
+    cursor: pointer;
+}
+
+@media only screen and (min-width:768px) and (max-width:992px){
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+
 .footer{
     background-color: var(--fondo-footer);
     height: 100px;
