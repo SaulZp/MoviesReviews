@@ -76,7 +76,32 @@ img.poster:hover{
     }
 }
 
+.dato-ficha{
+    display: inline-block!important;
+}
 
+.boton{
+    background-color: var(--btn-principal);
+    font-family: var(--fuente);
+    color: white;
+}
+
+.star{
+    color: yellow!important;
+}
+.enlace{
+    font-family: var(--fuente);
+    color: var(--btn-principal);
+}
+.enlace:hover{
+    text-decoration: none;
+    color: white!important;
+}
+
+.actor{
+    width: 200px!important;
+    height: 250px!important;
+}
 .footer{
     background-color: var(--fondo-footer);
     height: 100px;

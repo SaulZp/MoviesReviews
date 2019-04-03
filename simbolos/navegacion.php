@@ -6,8 +6,8 @@
             aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar Menú">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="navbar-collapse collapse" id="menu-principal">
+                
                 <ul class="navbar-nav ml-auto">
                     
                     <!-- VISITANTE -->
