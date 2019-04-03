@@ -17,42 +17,8 @@
 
 </head>
 <body>
-    
-    <!-- MENU DE NAVEGACION -->
-    <nav class="navbar navbar-dark menu navbar-expand-md contenedor">
-        <div class="container">
-            <a href="#" class="navbar-brand"><strong class="texto">MOVIESREVIEWS</strong></a>   
-            <button type="submit" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" 
-            aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar Menú">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="navbar-collapse collapse" id="menu-principal">
-                <ul class="navbar-nav ml-auto">
-                    
-                    <!-- VISITANTE -->
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Lo más buscado</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Iniciar Sesión</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Registrate</a></li>
-                    
-                    <!-- REGISTRADO -->
-                    <!-- <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Mis Playlist</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Mis Reseñas</a></li>
-                    <li class="nav-item"><a href="#" class="d-block d-md-none text-white nav-link">Mi Perfil</a></li> -->
-                    
-                    <!-- ADMINISTRADOR -->
-                    <!-- <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Película</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Género</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#">Salir</a></li> -->
-                </ul>
-                <!-- REGISTRADO PERFIL -->
-                <!-- <a class="nav-link text-white d-none d-md-inline" href="#"><i class="fas fa-user-circle user"></i></a> -->
-            </div> <!--navbar-collapse-->
-        </div> <!--container-->
-    </nav> <!--navbar-->
-
+    <?php require 'simbolos/navegacion.php';?>
 
     <!--MAIN-->
     <main >
@@ -141,21 +107,8 @@
         </div>
     <br>
     </main>
-    <!-- PIE DE PAGINA -->
-    <footer class="footer d-flex align-items-center"> 
-        <div class="container d-md-flex d-block justify-content-between align-items-center">
-            <div class="text-white">
-                <p class="m-0">MoviesReviews 2019. Todos los derechos reservados &copy;</p>
-            </div>
-            <div class="h5">
-              <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link text-white pl-0 pl-md-3 pb-1">Nosotros</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white pl-0 pl-md-3 pb-1">Contacto</a></li>
-              </ul>
-            </div><!--h5-->
-        </div><!--container-->
-    </footer><!--footer-->
 
+    <?php require 'simbolos/footer.php'; ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
