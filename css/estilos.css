@@ -26,6 +26,10 @@ body{
     padding: 0; 
 }
 
+.btn:hover {
+  opacity: 1;
+}
+
 .menu{
     background-color: var(--fondo-menu);
     font-family: var(--fuente);   
@@ -52,6 +56,10 @@ body{
     border-color: #eee!important;
 }
 
+.naranja{
+	background color: orange;
+}
+
 a.nav-link:hover{
     color:var(--btn-secundario)!important;
 }
@@ -65,6 +73,15 @@ img.poster{
     height: 400px!important;
 }
 
+.icono-login {
+  padding: 5px;
+  height: 30px;
+  background: orange;
+  color: white;
+  min-width: 30px;
+  text-align: center;
+}
+
 img.poster:hover{
     cursor: pointer;
 }
@@ -76,8 +93,72 @@ img.poster:hover{
     }
 }
 
+.dato-ficha{
+    display: inline-block!important;
+}
 
+.boton{
+    background-color: var(--btn-principal);
+    font-family: var(--fuente);
+    color: white;
+}
+
+<<<<<<< HEAD
+
+=======
+.star{
+    color: yellow!important;
+}
+.enlace{
+    font-family: var(--fuente);
+    color: var(--btn-principal);
+}
+.enlace:hover{
+    text-decoration: none;
+    color: white!important;
+}
+
+.actor{
+    width: 200px!important;
+    height: 250px!important;
+}
+>>>>>>> e87f689ca251ec6287ba736c185e39dfba9c5e99
 .footer{
     background-color: var(--fondo-footer);
     height: 100px;
+}
+
+
+.boton-enviar {
+  color: #fff;
+  background-color: var(--btn-principal);
+  border-color: var(--btn-principal);
+}
+
+.boton-enviar:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.boton-enviar:focus, .boton-enviar.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.boton-enviar.disabled, .boton-enviar:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.boton-enviar:not(:disabled):not(.disabled):active, .boton-enviar:not(:disabled):not(.disabled).active,
+.show > .boton-enviar.dropdown-toggle {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.boton-enviar:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
