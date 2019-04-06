@@ -60,6 +60,7 @@
             </div><!--form-group-->
         <!--form--> 
 	</main>
+	
 	<?php require 'simbolos/footer.php'; ?>
 </body>
 </html>

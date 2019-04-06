@@ -57,7 +57,7 @@ body{
 }
 
 .naranja{
-	background color: orange;
+	background-color: orange;
 }
 
 a.nav-link:hover{
@@ -103,9 +103,6 @@ img.poster:hover{
     color: white;
 }
 
-<<<<<<< HEAD
-
-=======
 .star{
     color: yellow!important;
 }
@@ -122,9 +119,8 @@ img.poster:hover{
     width: 200px!important;
     height: 250px!important;
 }
->>>>>>> e87f689ca251ec6287ba736c185e39dfba9c5e99
 .footer{
-    background-color: var(--fondo-footer);
+    background-color: var(--fondo-footer)!important;
     height: 100px;
 }
 
