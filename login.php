@@ -21,13 +21,13 @@
     <?php require 'simbolos/navegacion.php';?>
 
     <!--MAIN-->
-    <main >
+    <main>
             <div class=" d-flex form-group justify-content-center text-white row">
-				<div class="col-sm-5 text-right">
+				<div class="col-md-5 text-right">
 				<br>
 					<img src="img/logo.jpg" alt="logo" class="img-fluid">
 				</div>
-				<div class="col-sm-2 text-right align-middle">
+				<div class="col-md-2 text-right align-middle">
 					<br>
 					<br>
 					<br>
@@ -60,7 +60,7 @@
             </div><!--form-group-->
         <!--form--> 
 	</main>
-	
+
 	<?php require 'simbolos/footer.php'; ?>
 </body>
 </html>

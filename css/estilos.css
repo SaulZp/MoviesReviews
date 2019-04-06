@@ -16,10 +16,17 @@ h1,h2,h3,h4,h5,h6,p{
 main{
     background-color: var(--fondo-body);
 }
+
 .banner{
-    height: 450px!important;
-     
+    height: 200px!important;
 }
+
+@media only screen and (min-width: 576px){
+    .banner{
+        height: 400px!important;
+    }   
+}
+
 body{
     background-color: var(--fondo-body);
     margin:0;
@@ -67,11 +74,24 @@ a.nav-link:hover{
     font-size: 3rem;
     color: var(--btn-principal);
 }
+
 img.poster{
-    position: relative;
     width: 500px!important;
     height: 400px!important;
 }
+
+img.recomendacion{
+    width: 300px!important;
+    height: 300px!important;
+}
+
+@media only screen and (min-width: 768px){
+    img.recomendacion{
+        width: 400px!important;
+        height: 400px!important;
+    }
+}
+
 
 .icono-login {
   padding: 5px;
@@ -119,6 +139,21 @@ img.poster:hover{
     width: 200px!important;
     height: 250px!important;
 }
+
+#trailer{
+    width:75%;
+    margin:0 auto;
+  }
+  
+#trailer iframe{
+    width:100%;
+    margin:0 auto;
+  }
+
+
+
+
+
 .footer{
     background-color: var(--fondo-footer)!important;
     height: 100px;

@@ -12,6 +12,9 @@
     <!-- Agregando archivos bootstrap -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Agregando Slick -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <!-- Agregando Hojas de Estilos personalizada -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -24,7 +27,7 @@
     <main>  
         
         <div class="container-fluid p-0">
-            <img src="img/banner/01.jpg" alt="banner" class="img-fluid w-100">
+            <img src="img/banner.jpg" alt="banner" class="img-fluid w-100 banner">
         </div><!--banner-->
 
         <!-- FICHA TECNICA -->
@@ -49,7 +52,7 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <img src="img/posters/01.jpg" alt="poster" class="img-fluid rounded">
+                    <img src="img/posters/01.jpg" alt="poster" class="img-fluid rounded ">
                 </div>
                 <div class="col-12 col-md-8">
                     <div class="row">
@@ -78,12 +81,14 @@
                             <div class="d-none d-md-block">
                                 <br><br><br><br><br><br>
                             </div>  
-                            <button class="btn boton w-75 my-4 my-md-0">Ver Trailer <i class="fas fa-play pl-3"></i></button>
+                            <button class="btn boton w-75 my-4 my-md-0" data-toggle="modal" data-target="#trailer">Ver Trailer <i class="fas fa-play pl-3"></i></button>
                         </div><!-- Boton trailer-->
                     </div><!--row-->
                 </div><!--col-md-8-->
             </div><!--row-->
         </div><!--container sinopsis-->
+
+        
 
         <!--REPARTO-->
         <div class="container">
@@ -121,12 +126,65 @@
                 </div>
             </div><!--row-->
         </div><!--container reparto-->
+        <br><br>
+
+        <div class="container-fluid menu">
+            <div class="container">
+                <h2 class="text-white text-center py-4">Recomendaciones</h2>
+                <div class="regular slider">
+                    <div class="mx-1 mx-sm-1 mx-md-2 mx-lg-4"><a href="#"><img src="img/posters/01.jpg" class="img-fluid rounded recomendacion" alt="recomendacion"></a></div>
+                    <div class="mx-1 mx-sm-1 mx-md-2 mx-lg-4"><a href="#"><img src="img/posters/02.jpg" class="img-fluid rounded recomendacion" alt="recomendacion"></a></div>
+                    <div class="mx-1 mx-sm-1 mx-md-2 mx-lg-4"><a href="#"><img src="img/posters/03.jpg" class="img-fluid rounded recomendacion" alt="recomendacion"></a></div>
+                    <div class="mx-1 mx-sm-1 mx-md-2 mx-lg-4"><a href="#"><img src="img/posters/04.jpg" class="img-fluid rounded recomendacion" alt="recomendacion"></a></div>
+                    <div class="mx-1 mx-sm-1 mx-md-2 mx-lg-4"><a href="#"><img src="img/posters/05.jpg" class="img-fluid rounded recomendacion" alt="recomendacion"></a></div>
+                    <div class="mx-1 mx-sm-1 mx-md-2 mx-lg-4"><a href="#"><img src="img/posters/06.jpg" class="img-fluid rounded recomendacion" alt="recomendacion"></a></div>
+                </div>
+                <br>
+            </div>
+        </div>
     </main>
         
+        
+    
+
+
     <br><br>
     <?php require 'simbolos/footer.php'; ?>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $(".regular").slick({
+            infinite: true,
+            slidesToShow: 3,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2
+                }
+                },
+                {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+        });
+    });
+    </script>
 </body>
 </html>
