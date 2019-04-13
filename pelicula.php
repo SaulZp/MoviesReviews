@@ -160,11 +160,14 @@
         $(".regular").slick({
             infinite: true,
             slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [
                 {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
+                    //autoplaySpeed: 2000,
                     slidesToScroll: 3,
                     infinite: true,
                 }
