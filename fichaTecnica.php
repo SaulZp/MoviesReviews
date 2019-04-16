@@ -41,32 +41,57 @@
     <!--MAIN-->
     <main >
 			<h1 class = "text-white p-5">FICHA TÉCNICA</h1>
-            <div class=" container form-group text-white">
-				<div class="text-center align-middle">
+            <div class=" container content-middle form-group text-white">
+				<div class="">
 					<form action="">
 							<div class="row text-white">
+								<p class="col-sm-1"></p>
 								<p class=" col-sm">Título<input type="text" class="text-center  border-1 m-1 w-75" id="titulo" placeholder="" autocomplete="off"></p>
 								<p class=" col-sm">Director<input type="text" class="text-center  border-1 m-1 w-75" id="direc" placeholder="" autocomplete="off"></p>
-							</div>
-							<div class="container w-100 content-middle ml-3 mr-4">
-								<p class="text-left pl-1">Sinopsis</p><textarea class="text-center w-100 border-1 m-1" name="sinop" rows="5" ></textarea>
+								<p class="col-sm-1"></p>
 							</div>
 							<div class="row text-white">
+							<p class="col-sm-1"></p>
+							<div class="col container w-100 mr-5">
+								<p class="text-left ">Sinopsis</p><textarea class="text-center w-100 border-1  " name="sinop" rows="5" ></textarea>
+							</div>
+							<p class="col-sm-1"></p>
+							</div>
+							<div class="row text-white">
+								<p class="col-sm-1"></p>
 								<p class=" col-sm">Año<input type="text" class="text-center  border-1 m-1 w-75" id="ano" placeholder="" autocomplete="off"></p>
 								<p class=" col-sm">Duración<input type="text" class="text-center  border-1 m-1 w-75" id="durac" placeholder="" autocomplete="off"></p>
+								<p class="col-sm-1"></p>
 							</div>
 							<div class="row text-white">
+							<p class="col-sm-1"></p>
 								<p class=" col-sm">País<input type="text" class="text-center  border-1 m-1 w-75" id="pais" placeholder="" autocomplete="off"></p>
 								<p class=" col-sm">Idiomas<input type="text" class="text-center  border-1 m-1 w-75" id="idiomas" placeholder="" autocomplete="off"></p>
+								<p class="col-sm-1"></p>
 							</div>
-							<div class="container w-100 content-left">
-								<p>Productora<input type="text" class="text-center  border-1 m-1 w-75" id="productora" placeholder="" autocomplete="off"></p>
-								<p>Genero<input type="text" class="text-center  border-1 m-1 w-75" id="genero" placeholder="" autocomplete="off"></p>
-								<p>Trailer<input type="text" class="text-center  border-1 m-1 w-75" id="trailer" placeholder="" autocomplete="off"></p>
+							<div class="row content-left">
+								<p class="col-sm-1"></p>
+								<p class="col-sm-1">Productora</p>
+								<p class="col"> <input type="text" class="text-center  border-1 m-1 w-100" id="productora" placeholder="" autocomplete="off"></p>
+								<p class="col-sm-2"></p>
+							</div>
+							<div class="row ">
+							<p class="col-sm-1"></p>
+							<p class="col-sm-1">Genero<p/>
+							<p class="col"><input type="text" class="text-center  border-1 m-1 w-100" id="genero" placeholder="" autocomplete="off"></p>
+							<p class="col-sm-2"></p>
+							</div>
+							<div class="row content-left">
+							<p class="col-sm-1"></p>
+							<p class="col-sm-1">Trailer</p>
+							<p class="col-sm-8"><input type="text" class="text-center  border-1 m-1 w-100" id="trailer" placeholder="" autocomplete="off"></p>
+							<p class="col-sm-2"></p>
 							</div>
 							<div class="row text-white">
+							<p class="col-sm-1"></p>
 								<p class=" col-sm">Poster<span class="btn boton-enviar m-1"><input type="file"></span></p>
 								<p class=" col-sm">Poster Banner<span class="btn boton-enviar m-1"><input type="file"></span></p>
+								<p class="col-sm-1"></p>
 							</div>
 					</form>
 				</div>
