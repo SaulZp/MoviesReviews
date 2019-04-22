@@ -80,6 +80,19 @@ img.poster{
     height: 400px!important;
 }
 
+img.playlist{
+    width: 200px!important;
+    height: 300px!important;
+}
+
+@media only screen and (min-width: 576px){
+    img.playlist{
+        width: 300px!important;
+        height: 400px!important;
+    }
+}
+
+
 img.recomendacion{
     width: 300px!important;
     height: 300px!important;
@@ -124,6 +137,12 @@ img.poster:hover{
     font-size: 1.2rem;
 }
 
+.boton-secundario{
+    background-color: var(--btn-secundario)!important;
+    font-family: var(--fuente);
+    color:white;
+    font-size: 1.2rem;
+}
 .star{
     color: yellow!important;
 }
