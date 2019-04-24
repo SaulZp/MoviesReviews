@@ -1,10 +1,3 @@
-<?php
-    include("includes/conexion.php");
-    $conexion = conectar();
-    echo "Se conecto exitosamente";
-?>
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>

@@ -47,18 +47,18 @@
 					<p class="h5">Confirmar<br>Contraseña</p>
 				</div>
 				<div class="col-sm-5 ">
-				<form action="">
+				<form action="includes/registro.php" method="POST">
 					<br>
 					<br>
 					<br>
 					<br>
 					<br>
-					<p class="input-group"><i class="icono-login text-dark fa fa-user  w-30"></i><input type="text" class="text-center w-50 border-0 m-0 " id="nombre" placeholder="" autocomplete="off"></p>
-					<p class="input-group"><i class="text-dark fa fa-user icono-login"></i><input type="text" class="text-center  w-50 border-0" id="apellido" placeholder="" autocomplete="off"></p>
-					<p class="input-group"><i class="text-dark fa fa-user icono-login"></i><input type="text" class="text-center w-50 border-0" id="user" placeholder="" autocomplete="off"></p>
-					<p class="input-group"><i class="text-dark fa fa-envelope icono-login"></i><input type="text" class="text-center  w-50 border-0" id="correo" placeholder="" autocomplete="off"></p>
-					<p class="input-group"><i class="text-dark fa fa-key icono-login"></i><input type="password" class="text-center w-50 border-0" id="pass" placeholder="" autocomplete="off"></p>
-					<p class="input-group"><i class="text-dark  fa fa-key icono-login"></i><input type="password" class="text-center w-50 border-0" id="confirmacion" placeholder="" autocomplete="off"></p>
+					<p class="input-group"><i class="icono-login text-dark fa fa-user  w-30"></i><input type="text" class="text-center w-50 border-0 m-0 " name="nombre" id="nombre" placeholder="" autocomplete="off"></p>
+					<p class="input-group"><i class="text-dark fa fa-user icono-login"></i><input type="text" class="text-center  w-50 border-0" name="apellido" id="apellido" placeholder="" autocomplete="off"></p>
+					<p class="input-group"><i class="text-dark fa fa-user icono-login"></i><input type="text" class="text-center w-50 border-0" id="user" name="user" placeholder="" autocomplete="off"></p>
+					<p class="input-group"><i class="text-dark fa fa-envelope icono-login"></i><input type="email" class="text-center  w-50 border-0" id="correo" name="correo" placeholder="" autocomplete="off"></p>
+					<p class="input-group"><i class="text-dark fa fa-key icono-login"></i><input type="password" class="text-center w-50 border-0" id="pass" placeholder="" name="pass" autocomplete="off"></p>
+					<p class="input-group"><i class="text-dark  fa fa-key icono-login"></i><input type="password" class="text-center w-50 border-0" id="confirmacion" placeholder="" name="confirmacion" autocomplete="off"></p>
 					<p class="text-center"><button type="submit" class="btn boton-enviar align-left">Enviar</button></p>
 				</form>
 				</div>

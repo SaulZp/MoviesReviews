@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -42,7 +43,7 @@
 					
 				</div>
 				<div class="col-sm-5 ">
-				<form action="">
+				<form action="includes/login.php" method="POST">
 					<br>
 					<br>
 					<br>
@@ -50,8 +51,8 @@
 					<br>
 					<br>
 					<br>
-					<p class="input-group"><i class="text-dark fa fa-user icono-login"></i><input type="text" class="text-center w-50 border-0" id="user" placeholder="" autocomplete="off"></p>
-					<p class="input-group"><i class="text-dark fa fa-key icono-login"></i><input type="password" class="text-center w-50 border-0" id="pass" placeholder="" autocomplete="off"></p>
+					<p class="input-group"><i class="text-dark fa fa-user icono-login"></i><input type="text" name="user" class="text-center w-50 border-0" id="user" placeholder="" autocomplete="off"></p>
+					<p class="input-group"><i class="text-dark fa fa-key icono-login"></i><input type="password" name="pass" class="text-center w-50 border-0" id="pass" placeholder="" autocomplete="off"></p>
 					<p class="text-left"> <a href="" class="text-white pr-4">¿Olvidaste tu contraseña? </a><button type="submit" class="btn boton-enviar align-right">Ingresar</button></p>
 				</form>
 				</div>
@@ -64,3 +65,5 @@
 	<?php require 'simbolos/footer.php'; ?>
 </body>
 </html>
+
+
