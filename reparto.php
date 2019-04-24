@@ -25,18 +25,18 @@
 			<h1 class = "text-white p-5">Reparto</h1>
             <div class=" container form-group text-white">
 				<div class="text-center align-middle">
-					<form action="">
+					<form action="includes/agregaReparto.php" method="post">
 							<div class="container w-100 content-left">
-								<p>Nombre del actor<input type="text" class="text-center  border-1 m-1 w-75" id="productora" placeholder="" autocomplete="off"></p>
-								<p>Apellido del actor<input type="text" class="text-center  border-1 m-1 w-75" id="genero" placeholder="" autocomplete="off"></p>
-								<p><label class="mr-2">Personaje</label><input type="text" class="text-center  border-1 m-1 ml-5 w-75" id="trailer" placeholder="" autocomplete="off"></p>
+								<p>Nombre del actor<input type="text" name="nombre" class="text-center  border-1 m-1 w-75" id="productora" placeholder="" autocomplete="off"></p>
+								<p>Apellido del actor<input type="text" name="apellido" class="text-center  border-1 m-1 w-75" id="genero" placeholder="" autocomplete="off"></p>
+								<p><label class="mr-2">Personaje</label><input type="text" name="personaje" class="text-center  border-1 m-1 ml-5 w-75" id="trailer" placeholder="" autocomplete="off"></p>
 							</div>
 							<div class="row text-white">
 								<p class=" col-sm"><label class="mr-5">Foto del actor</label> <span class="btn boton-enviar ml-5"><input type="file"></span></p>
 							</div>
 							<div class="row text-white">
-								<p class=" col-sm"><button class="btn boton-enviar m-1">Guardar<i class="fas fa-save m-1"></i></button></p>
-								<p class=" col-sm"><button class="btn btn-success m-1">Terminar<i class="fas fa-arrow-right m-1"></i></button></p>
+								<p class=" col-sm"><button type="submit" name="submit" class="btn boton-enviar m-1">Guardar<i class="fas fa-save m-1"></i></button></p>
+								<p class=" col-sm"><button class="btn btn-success m-1" href="fichaTecnica.php">Terminar<i class="fas fa-arrow-right m-1"></i></button></p>
 							</div>
 					</form>
 				</div>

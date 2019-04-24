@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,19 +23,39 @@
 </head>
 <body>
 
-<?php require 'simbolos/navegacion.php';?>
+    <!--<nav class="navbar navbar-dark menu navbar-expand-md contenedor">
+        <div class="container">
+            <a href="#" class="navbar-brand"><strong class="texto">MOVIESREVIEWS</strong></a>   
+            <button type="submit" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" 
+            aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar Menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="menu-principal">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Película</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Genero</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Salir</a></li>
+                    
+                </ul>
+            </div> 
+        </div> 
+    </nav>
 
     <!--MAIN-->
+	<?php require 'simbolos/navegacion.php';?>
+	
     <main >
 			<h1 class = "text-white p-5">AGREGAR GÉNERO NUEVO</h1>
             <div class=" container form-group text-white ">
 				<div class="text-center align-middle">
-					<form action="">
+					<form action="includes/genero.php" method="post">
 							<div class="row text-white align-middle">
 								<div class=" col-sm  my-auto">
 								<h3>Nombre del Género</h3>
-								<input type="text" class="text-center  border-1 m-2 w-100" id="titulo" placeholder="" autocomplete="off">
-								<button class="btn boton-enviar m-2">Guardar<i class="fas fa-save m-1"></i></button></p>
+								<input type="text" class="text-center  border-1 m-2 w-100" id="genero" placeholder="" name="gender"  autocomplete="off">
+								<button type="submit" name="submit" class="btn boton-enviar m-2">Guardar<i class="fas fa-save m-1"></i></button></p>
 								</div>
 								<div class=" col-sm">
 								<img src="img/logo.jpg" alt="logo" class="img-fluid">
