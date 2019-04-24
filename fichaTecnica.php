@@ -25,7 +25,7 @@
 			<h1 class = "text-white p-5">FICHA TÉCNICA</h1>
             <div class=" container content-middle form-group text-white">
 				<div class="">
-					<form action="">
+					<form action="reparto.php" method="POST">
 							<div class="row text-white">
 								<p class="col-sm-1"></p>
 								<p class=" col-sm">Título<input type="text" class="text-center  border-1 m-1 w-75" id="titulo" placeholder="" autocomplete="off"></p>
@@ -59,7 +59,7 @@
 							</div>
 							<div class="row ">
 							<p class="col-sm-1"></p>
-							<p class="col-sm-1">Genero<p/>
+							<p class="col-sm-1">Género<p/>
 							<p class="col"><input type="text" class="text-center  border-1 m-1 w-100" id="genero" placeholder="" autocomplete="off"></p>
 							<p class="col-sm-2"></p>
 							</div>
@@ -70,10 +70,15 @@
 							<p class="col-sm-2"></p>
 							</div>
 							<div class="row text-white">
-							<p class="col-sm-1"></p>
+								<p class="col-sm-1"></p>
 								<p class=" col-sm">Poster<span class="btn boton-enviar m-1"><input type="file"></span></p>
 								<p class=" col-sm">Poster Banner<span class="btn boton-enviar m-1"><input type="file"></span></p>
 								<p class="col-sm-1"></p>
+							</div>
+							<div class="row">
+								<div class="col-12 d-flex justify-content-center">
+									<input type="submit" value="Continuar" href="reparto.php" class="btn btn-success">
+								</div>
 							</div>
 					</form>
 				</div>

@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-2"><br>
-                    <h4 class="text-white py-3"><i class="fas fa-film"></i> Generos</h4>
+                    <h4 class="text-white py-3"><i class="fas fa-film"></i> Géneros</h4>
                     <ul class="nav d-block">
                         <li class="nav-item"><a href="#" class="text-left fas fa-video nav-link text-white px-0 py-0"> Terror</a></li>
                         <hr class="bg-white">

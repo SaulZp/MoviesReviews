@@ -32,7 +32,7 @@
 
         <!-- FICHA TECNICA -->
         <div class="menu p-4">
-            <h3 class="text-white text-center">FICHA TECNICA</h3>
+            <h3 class="text-white text-center">FICHA TÉCNICA</h3>
             <div class="container">
                 <div class="text-white text-center">
                     <p class="d-md-inline-block d-block mx-md-3 mt-md-3 my-0">DIRECTOR: Juan Perez Lopez</p>

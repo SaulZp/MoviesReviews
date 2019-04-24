@@ -20,11 +20,11 @@
                         //Registrado
                         if(empty($_SESSION['id_user']) == FALSE){
                             echo '
-                            <li class="nav-item"><a class="nav-link text-white" href="../index.php">Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Mis Playlist</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="#">Mis Reseñas</a></li>
-                            <li class="nav-item"><a class="nav-link text-white" href="includes/outSession.php">Cerrar Sesion</a></li>
-                            <li class="nav-item"><a href="#" class="d-block d-md-none text-white nav-link">Mi Perfil</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="index.php">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="biblioteca.php">Mis Playlist</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="misResenas">Mis Reseñas</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="includes/outSession.php">Cerrar Sesión</a></li>
+                            <li class="nav-item"><a href="perfil.php" class="d-block d-md-none text-white nav-link">Mi Perfil</a></li>
                             </ul>
                             <a class="nav-link text-white d-none d-md-inline" href="#"><i class="fas fa-user-circle user"></i></a>
                             ';
@@ -32,8 +32,8 @@
                             //Administrador
                             if(empty($_SESSION['id_Admin']) == FALSE){
                                 echo '
-                                <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Película</a></li>
-                                <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Género</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="fichaTecnica.php">Agregar Película</a></li>
+                                <li class="nav-item"><a class="nav-link text-white" href="agregarGenero.php">Agregar Género</a></li>
                                 <li class="nav-item"><a class="nav-link text-white" href="includes/outSession.php">Salir</a></li>      
                                 </ul>
                                 ';

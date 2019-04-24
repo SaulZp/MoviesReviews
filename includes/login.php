@@ -31,4 +31,5 @@
         window.location="../fichaTecnica.php";
         </script>';
     }
+
 ?>

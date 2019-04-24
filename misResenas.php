@@ -17,25 +17,8 @@
   </head>
 </head>
 <body>
-<nav class="navbar navbar-dark menu navbar-expand-md contenedor">
-    <div class="container">
-        <a href="#" class="navbar-brand"><strong class="texto">MOVIESREVIEWS</strong></a>   
-        <button type="submit" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal" 
-        aria-controls="menu-principal" aria-expanded="false" aria-label="Desplegar Menú">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="navbar-collapse collapse" id="menu-principal">
-            <ul class="navbar-nav ml-auto">
-                
-                <li class="nav-item"><a class="nav-link text-white" href="#">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Mis playlists</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#">Mis reseñas</a></li>
-                <li class="nav-item "><a href="#"><i class="fa fa-user-circle text-white align-bottom " ></i></a></li>
-            </ul>
-        </div> <!--navbar-collapse-->
-    </div> <!--container-->
-</nav> <!--navbar-->
+    
+    <?php require 'simbolos/navegacion.php';?>
     
     <!--Aqui se agregan las reseñas (paneles)-->
     
