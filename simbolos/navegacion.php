@@ -25,6 +25,8 @@
                             <li class="nav-item"><a class="nav-link text-white" href="#">Mis Reseñas</a></li>
                             <li class="nav-item"><a class="nav-link text-white" href="includes/outSession.php">Cerrar Sesion</a></li>
                             <li class="nav-item"><a href="#" class="d-block d-md-none text-white nav-link">Mi Perfil</a></li>
+                            </ul>
+                            <a class="nav-link text-white d-none d-md-inline" href="#"><i class="fas fa-user-circle user"></i></a>
                             ';
                         }else{
                             //Administrador
@@ -33,6 +35,7 @@
                                 <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Película</a></li>
                                 <li class="nav-item"><a class="nav-link text-white" href="#">Agregar Género</a></li>
                                 <li class="nav-item"><a class="nav-link text-white" href="includes/outSession.php">Salir</a></li>      
+                                </ul>
                                 ';
                             }else{
                                 //Visitante
@@ -40,13 +43,13 @@
                                     <li class="nav-item"><a class="nav-link text-white" href="index.php">Inicio</a></li>
                                     <li class="nav-item"><a class="nav-link text-white" href="login.php">Iniciar Sesión</a></li>
                                     <li class="nav-item"><a class="nav-link text-white" href="registro.php">Registrate</a></li>
+                                    </ul>
                                     ';
                                 }
                             }
                     ?>
-                </ul>
+                
                 <!-- REGISTRADO PERFIL -->
-                <!-- <a class="nav-link text-white d-none d-md-inline" href="#"><i class="fas fa-user-circle user"></i></a> -->
             </div> <!--navbar-collapse-->
         </div> <!--container-->
     </nav> <!--navbar-->
