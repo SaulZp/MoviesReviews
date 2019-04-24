@@ -15,7 +15,14 @@ if(!empty($_POST["titulo"]) && !empty($_POST["director"])  && !empty($_POST["sin
 	$stmt->bind_param("sssiissss", $_POST["titulo"],$_POST["director"],$_POST["sinopsis"],$_POST["ano"],$id_Genero,$_POST["durac"],$_POST["pais"],$_POST["productora"],$_POST["trailer"]);
 	$stmt->execute();
 	$con->query($sql);
-	header("Location:../fichaTecnica.php");
+	$sql = 'select id_Pelicula from pelicula where titulo ="'.$_POST["titulo"].'"';	
+	$result = mysqli_query($con,$sql);
+	if(mysqli_num_rows($result) > 0){
+		$row = mysqli_fetch_assoc($result);
+		$id_Pelicula = $row['id_Genero'];
+	}
+	$_SESSION['id_Pelicula']=$id_Pelicula;
+	header("Location:../reparto.php");
 	exit;
 }
 }
