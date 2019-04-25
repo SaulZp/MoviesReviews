@@ -23,6 +23,7 @@
     <!--MAIN-->
     <main >
 			<h1 class = "text-white p-5">Reparto</h1>
+			<h1><?php echo $_SESSION['id_Pelicula']; ?></h1>
             <div class=" container form-group text-white">
 				<div class="text-center align-middle">
 					<form action="includes/agregaReparto.php" method="post">
@@ -32,7 +33,7 @@
 								<p><label class="mr-2">Personaje</label><input type="text" name="personaje" class="text-center  border-1 m-1 ml-5 w-75" id="trailer" placeholder="" autocomplete="off"></p>
 							</div>
 							<div class="row text-white">
-								<p class=" col-sm"><label class="mr-5">Foto del actor</label> <span class="btn boton-enviar ml-5"><input type="file"></span></p>
+								<p class=" col-sm"><label class="mr-5">Foto del actor</label> <span class="btn boton-enviar ml-5"><input type="file"  id="foto" name="foto"></span></p>
 							</div>
 							<div class="row text-white">
 								<p class=" col-sm"><button type="submit" name="submit" class="btn boton-enviar m-1">Guardar<i class="fas fa-save m-1"></i></button></p>

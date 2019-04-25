@@ -43,7 +43,7 @@
 			<h1 class = "text-white p-5">FICHA TÉCNICA</h1>
             <div class=" container content-middle form-group text-white">
 				<div class="">
-					<form action="includes/agregarPeli.php" method="post">
+					<form action="includes/agregarPeli.php" method="post" enctype="multipart/form-data">
 							<div class="row text-white">
 								<p class="col-sm-1"></p>
 								<p class=" col-sm">Título<input type="text" class="text-center  border-1 m-1 w-75" id="titulo" name="titulo" placeholder="" autocomplete="off"></p>
@@ -89,8 +89,8 @@
 							</div>
 							<div class="row text-white">
 							<p class="col-sm-1"></p>
-								<p class=" col-sm">Poster<span class="btn boton-enviar m-1"><input type="file"></span></p>
-								<p class=" col-sm">Poster Banner<span class="btn boton-enviar m-1"><input type="file"></span></p>
+								<p class=" col-sm">Poster<span class="btn boton-enviar m-1"><input type="file" name="poster" id="poster"></span></p>
+								<p class=" col-sm">Poster Banner<span class="btn boton-enviar m-1"><input type="file" name="posterBanner" id="posterBanner"></span></p>
 								<p class="col-sm-1"></p>
 							</div>
 							<div class ="row text-white">
