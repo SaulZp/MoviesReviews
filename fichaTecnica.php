@@ -1,3 +1,9 @@
+<?php
+include "includes/conexion.php";
+$con = conectar();
+$sql = 'select genero from generos';	
+$result = mysqli_query($con,$sql);
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -78,7 +84,17 @@
 							<div class="row ">
 							<p class="col-sm-1"></p>
 							<p class="col-sm-1">Genero<p/>
-							<p class="col"><input type="text" class="text-center  border-1 m-1 w-100" id="genero" name="genero" placeholder="" autocomplete="off"></p>
+							<p class="col">
+							<select class="browser-default custom-select">
+								<?php
+										if(mysqli_num_rows($result) > 0){
+											while($row = mysqli_fetch_assoc($result)){
+											echo '<option value='.$row["genero"].'>'.$row["genero"].'</option>';
+											}
+										}
+								?>
+							</select>
+							</p>
 							<p class="col-sm-2"></p>
 							</div>
 							<div class="row content-left">
