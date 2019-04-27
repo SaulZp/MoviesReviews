@@ -85,7 +85,7 @@ $result = mysqli_query($con,$sql);
 							<p class="col-sm-1"></p>
 							<p class="col-sm-1">Genero<p/>
 							<p class="col">
-							<select class="browser-default custom-select">
+							<select class="browser-default custom-select" name="genero">
 								<?php
 										if(mysqli_num_rows($result) > 0){
 											while($row = mysqli_fetch_assoc($result)){
