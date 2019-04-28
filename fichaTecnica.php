@@ -1,7 +1,7 @@
 <?php
 	include "includes/conexion.php";
 	$con = conectar();
-	$sql = 'select genero from generos';	
+	$sql = 'select * from generos';	
 	$result = mysqli_query($con,$sql);
 ?>
 
@@ -72,7 +72,7 @@
 								<?php
 										if(mysqli_num_rows($result) > 0){
 											while($row = mysqli_fetch_assoc($result)){
-											echo '<option value='.$row["genero"].'>'.$row["genero"].'</option>';
+											echo '<option value='.$row["id_Genero"].'>'.$row["genero"].'</option>';
 											}
 										}
 								?>
