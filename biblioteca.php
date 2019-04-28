@@ -24,7 +24,7 @@
 	<div class=" container content-middle form-group text-white">
 		<div class="row">
 			<div class="col">
-				<a href="#"><img src="img/icono-playlist.png" class="rounded-circle img-fluid"></a>
+				<a href="#"><img src="img/icono-playlist.png" href="crearLista.php" class="rounded-circle img-fluid"></a>
 				<h4 class="text-center">Crear playlist</h4>
 			</div>
 			<div class="col">
