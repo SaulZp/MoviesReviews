@@ -7,7 +7,7 @@ if(isset($_POST["submit"])){
 	$uploadOk = 1;
 	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
     $check = getimagesize($_FILES["poster"]["tmp_name"]);
-    if($check !== false) {
+    /*if($check !== false) {
         $uploadOk = 1;
     } else {
         $uploadOk = 0;
@@ -21,7 +21,7 @@ if(isset($_POST["submit"])){
 	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 	&& $imageFileType != "gif" ) {
 		$uploadOk = 0;
-	}
+	}*/
 	if ($uploadOk == 1) {
 		if (move_uploaded_file($_FILES["poster"]["tmp_name"], $target_file)){
 		}
@@ -31,7 +31,7 @@ if(isset($_POST["submit"])){
 	$uploadOk1 = 1;
 	$imageFileType1 = strtolower(pathinfo($target_file1,PATHINFO_EXTENSION));
     $check1 = getimagesize($_FILES["posterBanner"]["tmp_name"]);
-    if($check1 !== false) {
+    /*if($check1 !== false) {
         $uploadOk1 = 1;
     } else {
         $uploadOk1 = 0;
@@ -49,7 +49,7 @@ if(isset($_POST["submit"])){
 	&& $imageFileType1 != "gif" ) {
 		$uploadOk1 = 0;
 		echo "No sirve";
-	}
+	}*/
 	if ($uploadOk1 == 1) {
 		if (move_uploaded_file($_FILES["posterBanner"]["tmp_name"], $target_file1)){}
 	}

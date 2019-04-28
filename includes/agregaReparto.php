@@ -7,7 +7,7 @@ if(isset($_POST["submit"])){
 	$uploadOk = 1;
 	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
     $check = getimagesize($_FILES["foto"]["tmp_name"]);
-    if($check !== false) {
+    /*if($check !== false) {
         $uploadOk = 1;
     } else {
         $uploadOk = 0;
@@ -21,7 +21,7 @@ if(isset($_POST["submit"])){
 	if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 	&& $imageFileType != "gif" ) {
 		$uploadOk = 0;
-	}
+	}*/
 	if ($uploadOk == 1) {
 		if (move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file)){
 		}
