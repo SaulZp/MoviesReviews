@@ -23,10 +23,9 @@
     <!--MAIN-->
     <main >
 			<h1 class = "text-white p-5">Reparto</h1>
-			<h1><?php echo $_SESSION['id_Pelicula']; ?></h1>
             <div class=" container form-group text-white">
 				<div class="text-center align-middle">
-					<form action="includes/agregaReparto.php" method="post">
+					<form action="includes/agregaReparto.php" method="post" enctype="multipart/form-data">
 							<div class="container w-100 content-left">
 								<p>Nombre del actor<input type="text" name="nombre" class="text-center  border-1 m-1 w-75" id="productora" placeholder="" autocomplete="off"></p>
 								<p>Apellido del actor<input type="text" name="apellido" class="text-center  border-1 m-1 w-75" id="genero" placeholder="" autocomplete="off"></p>
