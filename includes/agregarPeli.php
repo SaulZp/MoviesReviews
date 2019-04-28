@@ -35,21 +35,25 @@ if(isset($_POST["submit"])){
         $uploadOk1 = 1;
     } else {
         $uploadOk1 = 0;
+		echo "no es img";
     }
 	if (file_exists($target_file1)) {
 		$uploadOk1 = 0;
+		echo "existe";
 	}
 	if ($_FILES["posterBanner"]["size"] > 500000) {
 		$uploadOk1 = 0;
+		echo "Muy grande";
 	}
 	if($imageFileType1 != "jpg" && $imageFileType1 != "png" && $imageFileType1 != "jpeg"
 	&& $imageFileType1 != "gif" ) {
 		$uploadOk1 = 0;
+		echo "No sirve";
 	}
 	if ($uploadOk1 == 1) {
 		if (move_uploaded_file($_FILES["posterBanner"]["tmp_name"], $target_file1)){}
 	}
-if(!empty($_POST["titulo"]) && !empty($_POST["director"])  && !empty($_POST["sinopsis"]) && !empty($_POST["ano"]) && !empty($_POST["durac"]) && !empty($_POST["pais"])
+	if(!empty($_POST["titulo"]) && !empty($_POST["director"])  && !empty($_POST["sinopsis"]) && !empty($_POST["ano"]) && !empty($_POST["durac"]) && !empty($_POST["pais"])
 	&& !empty($_POST["idiomas"]) && !empty($_POST["productora"]) && !empty($_POST["genero"]) && !empty($_POST["trailer"])){
 	$sql = 'select id_Genero from generos where genero ="'.$_POST["genero"].'"';	
 	$result = mysqli_query($con,$sql);
