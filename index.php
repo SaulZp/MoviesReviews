@@ -1,3 +1,8 @@
+<?php
+    include "includes/conexion.php";
+    $conexion = conectar();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -38,16 +43,19 @@
                 <div class="col-12 col-md-2"><br>
                     <h4 class="text-white py-3"><i class="fas fa-film"></i> Géneros</h4>
                     <ul class="nav d-block">
-                        <li class="nav-item"><a href="#" class="text-left fas fa-video nav-link text-white px-0 py-0"> Terror</a></li>
-                        <hr class="bg-white">
-                        <li class="nav-item"><a href="#" class="text-left fas fa-video nav-link text-white px-0 py-0"> Terror</a></li>
-                        <hr class="bg-white">
-                        <li class="nav-item"><a href="#" class="text-left fas fa-video nav-link text-white px-0 py-0"> Terror</a></li>
-                        <hr class="bg-white">
-                        <li class="nav-item"><a href="#" class="text-left fas fa-video nav-link text-white px-0 py-0"> Terror</a></li>
-                        <hr class="bg-white">
-                        <li class="nav-item"><a href="#" class="text-left fas fa-video nav-link text-white px-0 py-0"> Terror</a></li>
-                        <hr class="bg-white">
+
+                    <?php
+                        $consulta = "SELECT genero FROM generos";
+                        $result = mysqli_query($conexion, $consulta);
+                        if(mysqli_num_rows($result)>0){
+                            while($row = mysqli_fetch_assoc($result)){
+                                echo'
+                                <li class="nav-item"><a href="#" class="text-left fas fa-video nav-link text-white px-0 py-0"> '.$row["genero"].'</a></li>
+                                <hr class="bg-white">
+                                ';
+                            }
+                        }
+                    ?>
                     </ul><!--Fin de lista de generos-->
                     <br><br>
                     <h4 class="text-white py-3"><i class="fas fa-film"></i> Universos</h4>
@@ -64,35 +72,22 @@
                         <hr class="bg-white">
                     </ul> <!--Fin de lista de universos-->
                 </div>
+
                 <div class="col-12 col-md-10">
                     <div class="row">
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/01.jpg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div>
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/02.jpg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div>
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/03.jpg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div>
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/04.jpg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div>
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/05.jpg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div>
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/06.jpg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div> 
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/07.jpg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div>
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/08.jpeg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div>
-                        <div class="col-6 col-md-4 p-0">
-                            <img src="img/posters/09.jpg" alt="poster" class="img-fluid poster p-2 rounded">
-                        </div>
+                        <?php
+                            $consulta = "SELECT * FROM pelicula";
+                            $resultado = mysqli_query($conexion, $consulta);
+                            if(mysqli_num_rows($resultado)>0){
+                                while($row = mysqli_fetch_assoc($resultado)){
+                                    echo'
+                                    <div class="col-6 col-md-4 p-0">
+                                    <a href="pelicula.php?idPelicula='.$row["id_Pelicula"].'"><img src="img/posters/'.$row["poster"].'" alt="poster" class="img-fluid poster p-2 rounded"></a>
+                                    </div>
+                                    ';
+                                }
+                            }
+                        ?>
                     </div><!--Fin de seccion de peliculas-->
                 </div><!--fin de row de seccion de peliculas-->
             </div><!--fin de fila de contenido-->
