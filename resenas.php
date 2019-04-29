@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Agregando Hojas de Estilos personalizada -->
     <link rel="stylesheet" href="css/estilos.css">
+    
 </head>
 
 <body>
